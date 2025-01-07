@@ -12,7 +12,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use('/auth', authRoutes);
+app.use('/api/auth', authRoutes);
 app.use('/api/ads', adRoutes);
 
 const PORT = process.env.PORT || 5000;
